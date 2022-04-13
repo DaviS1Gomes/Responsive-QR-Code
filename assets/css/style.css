@@ -1,0 +1,57 @@
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    body {
+        background-color: var(--light-gray-color);
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+    }
+    
+    .cart {
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        height: 400px;
+        align-items: center;
+        text-align: center;
+        background-color: var(--white-color);
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 20px;
+        transition: 0.2s ease-in;
+    }
+    
+    .cart img {
+        width: 95%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cart h1 {
+        color: var(--dark-blue-color);
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .cart p {
+        color: var(--grayish-blue-color);
+        margin: 10px;
+        font-weight: 400;
+    }
+    
+    @media only screen and (max-width: 350px) {
+        .cart {
+            width: 250px;
+            height: auto;
+        }
+    }
+    
+    @media only screen and (max-width: 250px) {
+        .cart {
+            width: 150px;
+            height: auto;
+        }
+    }
